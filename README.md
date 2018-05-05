@@ -1,6 +1,6 @@
 # 11-Adv-Data-Storage-Retrieval
 
-##Step 1 - Data Engineering
+## Step 1 - Data Engineering
 
 The climate data for Hawaii is provided through two CSV files. Start by using Python and Pandas to inspect the content of these files and clean the data.
 
@@ -9,7 +9,7 @@ The climate data for Hawaii is provided through two CSV files. Start by using Py
 - Inspect the data for NaNs and missing values. You must decide what to do with this data.
 - Save your cleaned CSV files with the prefix clean_.
 
-##Step 2 - Database Engineering
+## Step 2 - Database Engineering
 
 - Use SQLAlchemy to model your table schemas and create a sqlite database for your tables. You will need one table for measurements and one for stations.
 - Create a Jupyter Notebook called database_engineering.ipynb and use this to complete all of your Database Engineering work.
