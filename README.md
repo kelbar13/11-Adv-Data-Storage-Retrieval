@@ -22,7 +22,7 @@ Make sure to define your primary keys.
 
 Once you have your ORM classes defined, create the tables in the database using create_all.
 
-##Step 3 - Climate Analysis and Exploration
+## Step 3 - Climate Analysis and Exploration
 
 You are now ready to use Python and SQLAlchemy to do basic climate analysis and data exploration on your new weather station tables. All of the following analysis should be completed using SQLAlchemy ORM queries, Pandas, and Matplotlib.
 
@@ -31,7 +31,7 @@ You are now ready to use Python and SQLAlchemy to do basic climate analysis and 
 - Use SQLAlchemy create_engine to connect to your sqlite database.
 - Use SQLAlchemy automap_base() to reflect your tables into classes and save a reference to those classes called Station and Measurement.
 
-###Precipitation Analysis
+### Precipitation Analysis
 
 - Design a query to retrieve the last 12 months of precipitation data.
 - Select only the date and prcp values.
@@ -39,7 +39,7 @@ You are now ready to use Python and SQLAlchemy to do basic climate analysis and 
 - Plot the results using the DataFrame plot method.
 - Use Pandas to print the summary statistics for the precipitation data.
 
-###Station Analysis
+### Station Analysis
 
 - Design a query to calculate the total number of stations.
 - Design a query to find the most active stations.
@@ -49,7 +49,7 @@ You are now ready to use Python and SQLAlchemy to do basic climate analysis and 
   - Filter by the station with the highest number of observations.
   - Plot the results as a histogram with bins=12.
 
-###Temperature Analysis
+### Temperature Analysis
 
 - Write a function called calc_temps that will accept a start date and end date in the format %Y-%m-%d and return the minimum, average, and maximum temperatures for that range of dates.
 - Use the calc_temps function to calculate the min, avg, and max temperatures for your trip using the matching dates from the previous year (i.e. use "2017-01-01" if your trip start date was "2018-01-01")
@@ -65,12 +65,12 @@ The following are optional challenge queries. These are highly recommended to at
 - Create a list of dates for your trip in the format %m-%d. Use the daily_normals function to calculate the normals for each date string and append the results to a list.
 - Load the list of daily normals into a Pandas DataFrame and set the index equal to the date.
 - Use Pandas to plot an area plot (stacked=False) for the daily normals.
-##Step 4 - Climate App
+## Step 4 - Climate App
 
 Now that you have completed your initial analysis, design a Flask api based on the queries that you have just developed.
 Use FLASK to create your routes.
 
-###Routes
+### Routes
 
 - /api/v1.0/precipitation
   - Query for the dates and temperature observations from the last year.
@@ -85,7 +85,7 @@ Use FLASK to create your routes.
   - When given the start only, calculate TMIN, TAVG, and TMAX for all dates greater than and equal to the start date.
   - When given the start and the end date, calculate the TMIN, TAVG, and TMAX for dates between the start and end date inclusive.
 
-###Hints
+### Hints
 
 - You will need to join the station and measurement tables for some of the analysis queries.
 - Use Flask jsonify to convert your api data into a valid json response object.
