@@ -56,7 +56,7 @@ You are now ready to use Python and SQLAlchemy to do basic climate analysis and 
 - Plot the min, avg, and max temperature from your previous query as a bar chart.
 - Use the average temperature as the bar height.
 - Use the peak-to-peak (tmax-tmin) value as the y error bar (yerr).
-###Optional Recommended Analysis
+### Optional Recommended Analysis
 
 The following are optional challenge queries. These are highly recommended to attempt, but not required for the homework.
 - Calcualte the rainfall per weather station using the previous year's matching dates.
